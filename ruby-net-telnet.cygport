@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-net-telnet"
+VERSION=0.1.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby telnet client module"
+DESCRIPTION="Provides telnet client functionality for Ruby."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_net_telnet_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
+ruby_net_telnet_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
